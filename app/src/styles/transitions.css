@@ -1,0 +1,71 @@
+.page{
+    opacity: 1;
+
+}
+.page:hover{
+}
+.pageSlider-leave {
+    transform: translate3d(0, 0, 0);
+}
+
+.pageSlider-leave.pageSlider-leave-active {
+    transform: translate3d(100%, 0, 0);
+    transition: all 600ms;
+}
+
+.pageSlider-enter {
+    transform: translate3d(100%, 0, 0);
+}
+
+.pageSlider-enter.pageSlider-enter-active {
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+}
+
+.pageAppear-leave {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
+
+.pageAppear-leave.pageAppear-leave-active {
+    opacity: 0;
+}
+
+.pageAppear-enter {
+    opacity: 0.01;
+    transition: opacity .5s ease-in;
+}
+
+.pageAppear-enter.pageAppear-enter-active {
+    opacity: 1;
+}
+
+
+
+.example-enter {
+    opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+    opacity: 1;
+}
+
+.example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+
+.example-appear {
+    opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
